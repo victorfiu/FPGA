@@ -18,7 +18,7 @@ begin
     variable PV, BP: std_logic_vector (n*2+1 downto 0);
     begin
         PV := (others => '0');
-        BP  := "0000" & B;
+        BP  := (n downto 0 => '0') & B;
         for i in 0 to n loop
             if A(i) = '1' then
                 PV := PV + BP;
