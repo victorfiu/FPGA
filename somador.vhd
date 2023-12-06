@@ -14,7 +14,7 @@ entity soma is
 architecture main of soma is
     
 begin
-    entradas: process (A,B, cin)
+    entradas: process (A,B,cin)
     variable v : std_logic_vector (n+1 downto 0);
     begin
         v(0) := cin;
